@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trabalho de CSS</title>
+        <style type="text/css">p {
+            color: brown;}
+            </style>
+    </head>
+    <body style="font-family: Arial, Helvetica, sans-serif;">
+        <h1 style="color: blueviolet;">A segunda etapa foi essa?</h1>
+        <p>Achei complicado...</p>
+        <p>Aprendemos os estilos de CSS (inline, interno e externo)</p>
+    </body>
+</html>
