@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade CSS</title>
+        <link rel="stylesheet" href="estilos.css">
+        <style>
+            h1{
+                color: blueviolet;
+                font-family: sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+       <h1>A Pantera Cor de Rosa</h1>
+       <p style="color: brown;">desenho antigo, merece nota 8</p>
+       <h1>Luluzinha</h1>
+       <p style="color: brown;">outro desenho antigo, merece nota 10</p>
+       <h2>Com isso entendemos que, os desenhos antigos eram otimos</h2>
+    </body>
+</html>
