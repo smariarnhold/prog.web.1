@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html 
     head>
-        <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Cadastro</title>
 </head>
 <body>
     <div>
-        <h1>Cadastro de filme</h1>
-        <p>Complete com suas informações</p>
+        <h1 id="titulo">Cadastro de filme</h1>
+        <p id="subtítulo">Complete com suas informações</p>
         <br>
     </div>
 
     <form>
-        <fieldset>
+        <fieldset class="grupo">
             <div>
-                <label>Nome</label>
-                <input type="text" name="nome" id="nome">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
             </div>
 
-            <div>
-                <label>Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome">
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
             </div>
         </fieldset>
 
-        <div>
-            <label>Email</label>
-                <input type="email" name="email" id="email">
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
         </div>
 
-        <div>
-            <label>Qual filme você vai assistir?</label>
+        <div class="campo">
+            <label><strong>Qual filme você vai assistir?</strong></label>
             <label>
                 <input type="radio" name="devweb" value="asbranquelas" checked>As Branquelas
             </label>
@@ -42,7 +43,7 @@
         </div>
 
         <div>
-            <label>Classificação</label>
+            <label for="classificação"><strong>Classificação</strong></label>
             <select id="classificação">
                 <option selected disabled value="">Selecione</option>
                 <option>Uma Estrela</option>
@@ -53,25 +54,27 @@
             </select>    
         </div>
 
-        <fieldset>
-            <label>Selecione o que você gosta de comer enquanto assiste o filme:</label><br></br>
-            <input type="checkbox" id="comer1" name="comer1" value="PIPOCA">
-            <label for="comer1">PIPOCA</label>
-            <input type="checkbox" id="comer2" name="comer2" value="HAMBÚRGUER">
-            <label for="comer2">HAMBÚRGUER</label>
-            <input type="checkbox" id="comer3" name="comer3" value="PIZZA">
-            <label for="comer3">PIZZA</label>
-            <input type="checkbox" id="comer4" name="comer4" value="BOLO">
-            <label for="comer4">BOLO</label>
+        <fieldset class="grupo">
+            <div id="checkbox">
+                <label><strong>Selecione o que você gosta de comer enquanto assiste o filme:</strong></label><br></br>
+                <input type="checkbox" id="comer1" name="comer1" value="PIPOCA">
+                <label for="comer1">PIPOCA</label>
+                <input type="checkbox" id="comer2" name="comer2" value="HAMBÚRGUER">
+                <label for="comer2">HAMBÚRGUER</label>
+                <input type="checkbox" id="comer3" name="comer3" value="PIZZA">
+                <label for="comer3">PIZZA</label>
+                <input type="checkbox" id="comer4" name="comer4" value="BOLO">
+                <label for="comer4">BOLO</label>
+            </div>
         </fieldset>
 
         <div>
             <br>
-            <label>Cite outros filmes que você gosta:</label>
+            <label><strong>Cite outros filmes que você gosta:</strong></label>
             <textarea row="6" style="width: 26em;" id="gosta" name="gosta"></textarea>
         </div>
 
-        <button type="submit">Concluido</button>
+        <button class="botão" type="submit">Concluido</button>
     </form>
 </body>
 </html>
