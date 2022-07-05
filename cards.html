@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap 2</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <style>
+            body{
+              background-color: #fcff56;
+            }
+            h3{
+                text-align: center;
+            }
+            p{
+                text-align: justify;
+                font-family:sans-serif;
+            }
+            h5{
+                font-family: fantasy;
+            }
+            div{
+                border-radius: 38px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="container my-4">
+            <div class="text-bg-info p-3">
+                <h1 style="color: yellow;">Exercício de Cards</h1>
+                <br>
+                <p>Esse site foi criado com a finalidade de contar um pouco sobre a trajetória de alguns humoristas do Brasil. </p>
+                <p>ATENÇÃO: não foi realizada nenhuma pesquisa pelo país para a conclusão desse site, portanto, entenda que será expressada somente a minha opinião. </p>
+            </div>
+        </header>
+        <br>
+        <div class="text-center">
+            <h3>TOP 3 MELHORES HUMORISTA DO BRASIL:</h3>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        Paulo Gustavo;
+                    </div>
+                    <div class="col-md-4">
+                        Tatá Werneck;
+                    </div>
+                    <div class="col-md-4">
+                        Mussum;
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <div  class="text-bg-info p-3 mx-5">
+                <h3 style="color: yellow;" >Suas Histórias:</h3>
+            </div>
+        </div>
+        <br>
+        <div class="card-group mx-5">
+            <div class="card">
+              <img src="https://pt.org.br/wp-content/uploads/2021/05/paulogustavo-divulgaccca7acc83o-4.jpg" class="card-img-top" alt="paulo gustavo">
+              <div class="card-body">
+                <h5 class="card-title">PAULO GUSTAVO</h5>
+                <p class="card-text">Nascido e criado em uma família de classe média da cidade de Niterói, Paulo Gustavo foi um humorista que ficou conhecido por protagonizar o monólogo Minha Mãe É uma Peça. Sua carreira ficou marcada por diversas participações em novelas, séries e filmes, entre os programas de TV podemos citar: A Vila, Vai que Cola e 220 Volts. Em sua morte, Paulo foi diagnosticado com Covid-19 e apresentou complicações no seu quadro, gerando assim, uma morte cerebral. Sua morte teve uma repercussão gigantesca no mundo artístico, político e intelectual, tanto no Brasil quanto no exterior.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">“As pessoas se incomodam até com meu silêncio, imaginem com meu barulho.” </small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="data:image/jpeg;base64,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" class="card-img-top" alt="tatá werneck">
+              <div class="card-body">
+                <h5 class="card-title">TATÁ WERNECK</h5>
+                <p class="card-text">Talita Werneck, é atriz, humorista, apresentadora, musicista, repórter e dubladora brasileira. Nasceu em 11 de agosto de 1983, na Barra da Tijuca, no município do Rio de Janeiro e foi criada pelo seus pais, começou no meio artistico desde muito nova, exatamente aos nove anos foi matriculada em um curso de teatro e, aos onze anos, atuou em sua primeira peça profissional no musical Annie. Logo depois, continuou seu crescimento de forma acelerada fazendo participações em vários programas de TV,como Os Buchas e Comédia MTV. Atualmente, Tata estrela o seu programa de TV "Lady Night" com uma audiencia descomunal.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">“Eu malho só para as cenas de biquíni e, depois, como imediatamente, assim que terminam” </small>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://uploads.metropoles.com/wp-content/uploads/2019/06/19150049/mussum.jpg" class="card-img-top" alt="mussum">
+              <div class="card-body">
+                <h5 class="card-title">MUSSUM</h5>
+                <p class="card-text">Antônio Carlos Bernardes Gomes, mais conhecido pelo nome artístico Mussum, foi um humorista, ator, músico, cantor e compositor brasileiro. Nascido no Morro da Cachoeirinha, zona norte do Rio de Janeiro, foi criado pela mãe e concluiu os estudos por ensinamentos e desejos dela. Iniciou sua carreira artistica na decada de 60, onde foi convidado a participar de um show de televisão, como humorista. Sua trajetória foi marcadas de grandes trabalhos, e podemos afirmar com toda a certeza que sua participação em "Os Trapalhões" é uma das mais lembradas, sua personagem constantemente brincava com os outros membros do grupo: Didi, Zacarias e Dedé. Infelizmente, no dia 29 de julho de 1994, Mussum morreu aos 53 anos, vítima de complicações ocorridas após um transplante de coração, mas nos deixou vários legados.</p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">"Todo mundo vê os porris que eu tomo, mas ninguém vê os tombis que eu levo!"</small>
+              </div>
+            </div>
+          </div>
+          <br>
+        <h3>Curiosidade...</h3>
+        <br>
+        <div class="card text-bg-info mb-3 mx-5">
+            <div class="card-header bg-transparent border-primary">
+                <b>O que o riso causa no cérebro? </b>
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-4">
+                    <p style="font-family: monospace; text-align: left;">O riso aumenta os níveis de dopamina, substância ligada ao prazer e o responsável pela alegria. Ela age no cérebro e nos faz sentir prazer, diminuindo os níveis de estresse, e melhora a capacidade do corpo de combater infecções.</p>
+                    <footer class="blockquote-footer bg-transparent border-primary"></footer>
+                </blockquote>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>
